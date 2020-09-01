@@ -6,11 +6,16 @@
     android:orientation="vertical"
     tools:context="dk.easj.anbo.datepickerexample.MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservation start"
+        android:textSize="20sp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
 
         <Button
             android:id="@+id/mainDateButton"
@@ -29,10 +34,20 @@
             android:text="Time" />
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Meeting start"
-        android:textSize="20sp" />
+        android:onClick="showTimes"
+        android:text="Show times" />
+
+    <TextView
+        android:id="@+id/mainUnixTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/mainTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
